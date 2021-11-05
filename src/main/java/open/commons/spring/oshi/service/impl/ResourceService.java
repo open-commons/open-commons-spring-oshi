@@ -48,6 +48,7 @@ import open.commons.spring.web.mvc.service.AbstractComponent;
 import open.commons.utils.CollectionUtils;
 import open.commons.utils.ThreadUtils;
 
+import oshi.PlatformEnum;
 import oshi.SystemInfo;
 import oshi.hardware.CentralProcessor;
 import oshi.hardware.GlobalMemory;
@@ -116,12 +117,13 @@ public class ResourceService extends AbstractComponent implements IResourceServi
     };
 
     /** 시스템 정보 */
-    private final SystemInfo si;
+    protected final SystemInfo si;
     /** H/W 정보 */
-    private final HardwareAbstractionLayer hw;
-
+    protected final HardwareAbstractionLayer hw;
     /** O.S 정보 */
-    private final OperatingSystem os;
+    protected final OperatingSystem os;
+    /** Platform 정보 */
+    protected final PlatformEnum platform;
 
     /**
      * <br>
@@ -140,8 +142,9 @@ public class ResourceService extends AbstractComponent implements IResourceServi
      */
     public ResourceService() {
         this.si = new SystemInfo();
-        this.hw = this.si.getHardware();
-        this.os = this.si.getOperatingSystem();
+        this.hw = si.getHardware();
+        this.os = si.getOperatingSystem();
+        this.platform = SystemInfo.getCurrentPlatform();
     }
 
     /**
