@@ -1,5 +1,5 @@
 # open-commons-spring-oshi
-Open Commons for [OSHI (Operating System & Hardwar Information)](https://github.com/oshi/oshi)
+Open Commons for [OSHI (Operating System & Hardware Information)](https://github.com/oshi/oshi)
 
 ---
 # History
