@@ -64,6 +64,8 @@ import oshi.software.os.OperatingSystem;
  */
 public class ResourceService extends AbstractComponent implements IResourceService {
 
+    public static final String BEAN_QUALIFIER = "open.commons.spring.oshi.service.impl.ResourceService";
+
     /**
      * 논리 프로세스별 사용률을 제공한다.
      * 
