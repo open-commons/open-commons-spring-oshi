@@ -27,12 +27,14 @@
 package open.commons.spring.oshi.service.impl;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentSkipListMap;
 
 import open.commons.Result;
 import open.commons.spring.oshi.data.Network;
+import open.commons.spring.oshi.data.Nic;
 import open.commons.spring.oshi.data.ResourceNotFoundException;
 import open.commons.spring.oshi.service.INetworkService;
 import open.commons.spring.oshi.service.IResourceService;
@@ -63,6 +65,19 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
     private final PlatformEnum platform = SystemInfo.getCurrentPlatform();
     /** 시스템 정보 제공 서비스 */
     private IResourceService resourceSvc;
+
+    /**
+     * Ethernet 이름과 Alias 정보.<br>
+     * Ethernet을 비활성화 시킨 후 다시 활성화 하는 경우, 비활성화 된 Ethernet는 조회가 되지 않는 현상
+     * <ul>
+     * <li>key: Ethernet name. Nic#getName()
+     * <li>value: Alias . Nic#getAlias()
+     * </ul>
+     * 
+     * @see Nic#getName()
+     * @see Nic#getAlias()
+     */
+    private final Map<String, String> ethernetAliases = new HashMap<>();
 
     /**
      * <br>
@@ -177,9 +192,18 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
 
     private Result<Boolean> handleEthernetOnWindows(String name, boolean enable) {
         try {
-            Result<String> resultAlias = getEthernetAlias(name);
-            if (resultAlias.isError()) {
-                return Result.copyOf(resultAlias);
+
+            Result<String> resultAlias = null;
+            if (enable) {
+                if (!this.ethernetAliases.containsKey(name)) {
+                    throw new ResourceNotFoundException("'%s'에 해당하는 이더넷 카드가 존재하지 않습니다.", name);
+                }
+                resultAlias = new Result<String>(this.ethernetAliases.get(name), true);
+            } else {
+                resultAlias = getEthernetAlias(name);
+                if (resultAlias.isError()) {
+                    return Result.copyOf(resultAlias);
+                }
             }
 
             String[] netcmd = getCommand(this.platform);
