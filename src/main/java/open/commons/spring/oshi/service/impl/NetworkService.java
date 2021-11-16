@@ -192,7 +192,7 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
 
     private Result<Boolean> handleEthernetOnWindows(String name, boolean enable) {
         try {
-
+            updateEthernets();
             Result<String> resultAlias = null;
             if (enable) {
                 if (!this.ethernetAliases.containsKey(name)) {
@@ -216,6 +216,33 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
             String errMsg = String.format("이더넷(%s) %s 작업을 실패하였습니다. 원인=%s", name, enable ? "활성화" : "비활성화", e.getMessage());
             logger.error(errMsg, e);
             return Result.error(errMsg);
+        }
+    }
+
+    /**
+     * 현재 Ethernet 정보를 갱신합니다. <br>
+     * 
+     * <pre>
+     * [개정이력]
+     *      날짜    	| 작성자	|	내용
+     * ------------------------------------------
+     * 2021. 11. 16.		박준홍			최초 작성
+     * </pre>
+     *
+     *
+     * @since 2021. 11. 16.
+     * @version _._._
+     * @author parkjunhong77@gmail.com
+     */
+    private void updateEthernets() {
+        Result<Network> resultNetwork = resourceSvc.getNetwork();
+        if (resultNetwork.isError()) {
+            logger.warn("이더넷 정보를 갱신하지 못하였습니다. 원인=%s", resultNetwork.getMessage());
+        } else {
+            resultNetwork.getData().getNics().stream()//
+                    .forEach(nw -> {
+                        ethernetAliases.put(nw.getName(), nw.getAlias());
+                    });
         }
     };
 }
