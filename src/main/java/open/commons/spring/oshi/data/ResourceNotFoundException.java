@@ -30,7 +30,7 @@ package open.commons.spring.oshi.data;
  * 시스템에서 자원을 발견하지 못한 경우 발생.
  * 
  * @since 2021. 11. 16.
- * @version _._._
+ * @version 0.1.0
  * @author parkjunhong77@gmail.com
  */
 public class ResourceNotFoundException extends Exception {
@@ -49,7 +49,7 @@ public class ResourceNotFoundException extends Exception {
      *
      *
      * @since 2021. 11. 16.
-     * @version _._._
+     * @version 0.1.0
      * @author parkjunhong77@gmail.com
      */
     public ResourceNotFoundException() {
@@ -68,7 +68,7 @@ public class ResourceNotFoundException extends Exception {
      * @param message
      *
      * @since 2021. 11. 16.
-     * @version _._._
+     * @version 0.1.0
      * @author parkjunhong77@gmail.com
      */
     public ResourceNotFoundException(String message) {
@@ -89,7 +89,7 @@ public class ResourceNotFoundException extends Exception {
      * @param args
      *
      * @since 2021. 11. 16.
-     * @version _._._
+     * @version 0.1.0
      * @author parkjunhong77@gmail.com
      * 
      * @see String#format(String, Object...)
@@ -112,7 +112,7 @@ public class ResourceNotFoundException extends Exception {
      * @param cause
      *
      * @since 2021. 11. 16.
-     * @version _._._
+     * @version 0.1.0
      * @author parkjunhong77@gmail.com
      */
     public ResourceNotFoundException(String message, Throwable cause) {
@@ -135,7 +135,7 @@ public class ResourceNotFoundException extends Exception {
      * @param writableStackTrace
      *
      * @since 2021. 11. 16.
-     * @version _._._
+     * @version 0.1.0
      * @author parkjunhong77@gmail.com
      */
     public ResourceNotFoundException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
@@ -155,7 +155,7 @@ public class ResourceNotFoundException extends Exception {
      * @param cause
      *
      * @since 2021. 11. 16.
-     * @version _._._
+     * @version 0.1.0
      * @author parkjunhong77@gmail.com
      */
     public ResourceNotFoundException(Throwable cause) {
@@ -180,7 +180,7 @@ public class ResourceNotFoundException extends Exception {
      *            TODO
      *
      * @since 2021. 11. 16.
-     * @version _._._
+     * @version 0.1.0
      * @author parkjunhong77@gmail.com
      */
     public ResourceNotFoundException(Throwable cause, boolean enableSuppression, boolean writableStackTrace, String format, Object... args) {
@@ -201,7 +201,7 @@ public class ResourceNotFoundException extends Exception {
      * @param args
      *
      * @since 2021. 11. 16.
-     * @version _._._
+     * @version 0.1.0
      * @author parkjunhong77@gmail.com
      * 
      * @see String#format(String, Object...)

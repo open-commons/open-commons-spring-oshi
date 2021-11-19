@@ -31,7 +31,7 @@ import open.commons.Result;
 /**
  * 
  * @since 2021. 11. 16.
- * @version _._._
+ * @version 0.1.0
  * @author parkjunhong77@gmail.com
  */
 public interface INetworkService {
@@ -49,14 +49,16 @@ public interface INetworkService {
      *
      * @param name
      *            이더넷 이름.
+     * @param displayName TODO
+     * @param alias TODO
      * @param enable
      *            활성화/비활성화 여부. (true: 활성화)
      * @return
      *
      * @since 2021. 11. 16.
-     * @version _._._
+     * @version 0.1.0
      * @author parkjunhong77@gmail.com
      */
-    public Result<Boolean> handleEthernet(String name, boolean enable);
+    public Result<Boolean> handleEthernet(String name, String displayName, String alias, boolean enable);
 
 }

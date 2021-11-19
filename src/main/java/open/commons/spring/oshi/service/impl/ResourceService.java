@@ -170,7 +170,7 @@ public class ResourceService extends AbstractComponent implements IResourceServi
      *            에러 메시지 취합
      *
      * @since 2021. 11. 5.
-     * @version _._._
+     * @version 0.1.0
      * @author parkjunhong77@gmail.com
      */
     private <T> boolean getAndSet(Supplier<Result<T>> provider, Consumer<T> con, ArrayList<String> errMsgBuf) {

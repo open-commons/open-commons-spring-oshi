@@ -47,14 +47,14 @@ import oshi.SystemInfo;
 /**
  * 
  * @since 2021. 11. 16.
- * @version _._._
+ * @version 0.1.0
  * @author parkjunhong77@gmail.com
  */
 public class NetworkService extends CliExecutionComponent implements INetworkService {
 
     public static final String BEAN_QUALIFIER = "open.commons.spring.oshi.service.impl.NetworkService";
 
-    private static final Map<PlatformEnum, String[]> NET_COMMANDS = new ConcurrentSkipListMap<>();
+    protected static final Map<PlatformEnum, String[]> NET_COMMANDS = new ConcurrentSkipListMap<>();
     static {
         // Windows. (e.g. netsh interface set interface <alias>")
         // @see {@link Nic#getAlias}
@@ -62,9 +62,9 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
     }
 
     /** 현재 운영체제 */
-    private final PlatformEnum platform = SystemInfo.getCurrentPlatform();
+    protected final PlatformEnum platform = SystemInfo.getCurrentPlatform();
     /** 시스템 정보 제공 서비스 */
-    private IResourceService resourceSvc;
+    protected IResourceService resourceSvc;
 
     /**
      * Ethernet 이름과 Alias 정보.<br>
@@ -77,7 +77,7 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
      * @see Nic#getName()
      * @see Nic#getAlias()
      */
-    private final Map<String, String> ethernetAliases = new HashMap<>();
+    protected final Map<String, String> ethernetAliases = new HashMap<>();
 
     /**
      * <br>
@@ -94,14 +94,14 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
      *
      *
      * @since 2021. 11. 16.
-     * @version _._._
+     * @version 0.1.0
      * @author parkjunhong77@gmail.com
      */
     public NetworkService(IResourceService resourceSvc) {
         this.resourceSvc = resourceSvc;
     }
 
-    private String[] getCommand(PlatformEnum platform) {
+    protected final String[] getCommand(PlatformEnum platform) {
         String[] netcmd = NET_COMMANDS.get(platform);
         if (netcmd == null) {
             throw new UnsupportedOperationException(String.format("현재 운영체제(%s)에서는 지원하지 않는 기능입니다.", this.platform));
@@ -127,7 +127,7 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
      * @since 2021. 11. 16.
      * @author Park_Jun_Hong_(fafanmama_at_naver_com)
      */
-    private Result<String> getEthernetAlias(String name) throws ResourceNotFoundException {
+    protected Result<String> getEthernetAlias(String name) throws ResourceNotFoundException {
 
         Result<Network> resultNetwork = resourceSvc.getNetwork();
         if (resultNetwork.isError()) {
@@ -149,14 +149,14 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
     /**
      *
      * @since 2021. 11. 16.
-     * @version _._._
+     * @version 0.1.0
      * @author parkjunhong77@gmail.com
      *
-     * @see open.commons.spring.oshi.service.INetworkService#handleEthernet(java.lang.String, boolean)
+     * @see open.commons.spring.oshi.service.INetworkService#handleEthernet(java.lang.String, String, String, boolean)
      */
     @SuppressWarnings("deprecation")
     @Override
-    public Result<Boolean> handleEthernet(String name, boolean enable) {
+    public Result<Boolean> handleEthernet(String name, String displayName, String alias, boolean enable) {
         switch (platform) {
             case AIX:
                 throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
@@ -182,7 +182,7 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
             case UNKNOWN:
                 throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
             case WINDOWS:
-                return handleEthernetOnWindows(name, enable);
+                return handleEthernetOnWindows(name, alias, enable);
             case WINDOWSCE:
                 throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
             default:
@@ -190,25 +190,20 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
         }
     }
 
-    private Result<Boolean> handleEthernetOnWindows(String name, boolean enable) {
+    protected Result<Boolean> handleEthernetOnWindows(String name, String alias, boolean enable) {
         try {
             updateEthernets();
-            Result<String> resultAlias = null;
-            if (enable) {
-                if (!this.ethernetAliases.containsKey(name)) {
-                    throw new ResourceNotFoundException("'%s'에 해당하는 이더넷 카드가 존재하지 않습니다.", name);
-                }
-                resultAlias = new Result<String>(this.ethernetAliases.get(name), true);
-            } else {
-                resultAlias = getEthernetAlias(name);
-                if (resultAlias.isError()) {
-                    return Result.copyOf(resultAlias);
-                }
+
+            // 주어진 이더넷에 대한 최신 'alias' 값
+            String latestAlias = this.ethernetAliases.get(name);
+
+            if (latestAlias != null) {
+                alias = latestAlias;
+            } else if (alias == null) {
+                throw new ResourceNotFoundException("'%s'에 해당하는 이더넷 카드가 존재하지 않습니다.", name);
             }
 
             String[] netcmd = getCommand(this.platform);
-            String alias = resultAlias.getData();
-
             String[] cmdarray = ArrayUtils.add(netcmd, alias, enable ? "enable" : "disable");
 
             return executeNoWait(cmdarray, enable ? "이더넷 활성화" : "이더넷 비활성화");
@@ -231,10 +226,10 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
      *
      *
      * @since 2021. 11. 16.
-     * @version _._._
+     * @version 0.1.0
      * @author parkjunhong77@gmail.com
      */
-    private void updateEthernets() {
+    protected void updateEthernets() {
         Result<Network> resultNetwork = resourceSvc.getNetwork();
         if (resultNetwork.isError()) {
             logger.warn("이더넷 정보를 갱신하지 못하였습니다. 원인=%s", resultNetwork.getMessage());
