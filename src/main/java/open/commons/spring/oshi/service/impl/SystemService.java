@@ -31,9 +31,11 @@ import java.util.Arrays;
 import java.util.concurrent.Future;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.scheduling.annotation.Async;
 
 import open.commons.Result;
 import open.commons.spring.oshi.service.ISystemService;
+import open.commons.spring.web.config.ResourceConfiguration;
 import open.commons.spring.web.mvc.IAsyncJobHandler;
 import open.commons.spring.web.mvc.service.CliExecutionComponent;
 import open.commons.utils.ArrayUtils;
@@ -96,8 +98,9 @@ public class SystemService extends CliExecutionComponent implements ISystemServi
      *
      * @see open.commons.spring.oshi.service.ISystemService#shutdownSystem(String...)
      */
-    @SuppressWarnings("deprecation")
+    @Async(ResourceConfiguration.BEAN_QUALIFIER_THREAD_POOL)
     @Override
+    @SuppressWarnings("deprecation")
     public Future<Object> shutdownSystem(String... args) {
         Object obj = null;
 
