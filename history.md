@@ -1,3 +1,8 @@
+[2021/11/23]
+- New
+  + open.commons.spring.oshi.service.ISystemService
+  + open.commons.spring.oshi.service.impl.SystemService
+  
 [2021/11/16]
 - New
   + open.commons.spring.oshi.service.INetworkService
