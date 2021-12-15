@@ -172,6 +172,12 @@
 			<groupId>open.commons</groupId>
 			<artifactId>open-commons-spring-web</artifactId>
 			<version>${open-commons-spring-web.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>open.commons</groupId>
+					<artifactId>open-commons-ssh</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<!-- end: open.commons -->
 		<!-- ************** -->
