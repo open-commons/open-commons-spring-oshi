@@ -125,7 +125,7 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
      * @return
      *
      * @since 2021. 11. 16.
-     * @author Park_Jun_Hong_(fafanmama_at_naver_com)
+     * @author Park_Jun_Hong (parkjunhong77@gmail.com)
      */
     protected Result<String> getEthernetAlias(String name) throws ResourceNotFoundException {
 

@@ -54,7 +54,7 @@ public interface ISystemService {
      *
      *
      * @since 2021. 11. 23.
-     * @author Park_Jun_Hong_(fafanmama_at_naver_com)
+     * @author Park_Jun_Hong (parkjunhong77@gmail.com)
      */
     public Future<Object> shutdownSystem(String... args);
 }
