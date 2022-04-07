@@ -32,14 +32,14 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentSkipListMap;
 
-import open.commons.Result;
+import open.commons.core.Result;
+import open.commons.core.utils.ArrayUtils;
 import open.commons.spring.oshi.data.Network;
 import open.commons.spring.oshi.data.Nic;
 import open.commons.spring.oshi.data.ResourceNotFoundException;
 import open.commons.spring.oshi.service.INetworkService;
 import open.commons.spring.oshi.service.IResourceService;
 import open.commons.spring.web.mvc.service.CliExecutionComponent;
-import open.commons.utils.ArrayUtils;
 
 import oshi.PlatformEnum;
 import oshi.SystemInfo;

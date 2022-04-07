@@ -33,12 +33,12 @@ import java.util.concurrent.Future;
 import org.springframework.boot.SpringApplication;
 import org.springframework.scheduling.annotation.Async;
 
-import open.commons.Result;
+import open.commons.core.Result;
+import open.commons.core.utils.ArrayUtils;
 import open.commons.spring.oshi.service.ISystemService;
 import open.commons.spring.web.config.ResourceConfiguration;
 import open.commons.spring.web.mvc.IAsyncJobHandler;
 import open.commons.spring.web.mvc.service.CliExecutionComponent;
-import open.commons.utils.ArrayUtils;
 
 import oshi.PlatformEnum;
 import oshi.SystemInfo;

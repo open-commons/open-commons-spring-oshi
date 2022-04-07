@@ -26,7 +26,7 @@
 
 package open.commons.spring.oshi.service;
 
-import open.commons.Result;
+import open.commons.core.Result;
 
 /**
  * 

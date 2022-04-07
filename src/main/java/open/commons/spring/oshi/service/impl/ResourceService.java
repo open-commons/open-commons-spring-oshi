@@ -32,8 +32,10 @@ import java.util.function.BiFunction;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-import open.commons.Result;
-import open.commons.function.Runner;
+import open.commons.core.Result;
+import open.commons.core.function.Runner;
+import open.commons.core.utils.CollectionUtils;
+import open.commons.core.utils.ThreadUtils;
 import open.commons.spring.oshi.data.Cpu;
 import open.commons.spring.oshi.data.CpuCore;
 import open.commons.spring.oshi.data.DiskStatus;
@@ -45,8 +47,6 @@ import open.commons.spring.oshi.data.SystemRunning;
 import open.commons.spring.oshi.data.SystemStatus;
 import open.commons.spring.oshi.service.IResourceService;
 import open.commons.spring.web.mvc.service.AbstractComponent;
-import open.commons.utils.CollectionUtils;
-import open.commons.utils.ThreadUtils;
 
 import oshi.PlatformEnum;
 import oshi.SystemInfo;

@@ -26,7 +26,7 @@
 
 package open.commons.spring.oshi.service;
 
-import open.commons.Result;
+import open.commons.core.Result;
 import open.commons.spring.oshi.data.Cpu;
 import open.commons.spring.oshi.data.Memory;
 import open.commons.spring.oshi.data.Network;
