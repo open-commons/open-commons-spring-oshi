@@ -98,7 +98,7 @@ public class SystemService extends CliExecutionComponent implements ISystemServi
      *
      * @see open.commons.spring.oshi.service.ISystemService#shutdownSystem(String...)
      */
-    @Async(ResourceConfiguration.BEAN_QUALIFIER_THREAD_POOL)
+    @Async(ResourceConfiguration.BEAN_QUALIFIER_BUILTIN_THREAD_POOL_TASK_EXECUTOR)
     @Override
     @SuppressWarnings("deprecation")
     public Future<Object> shutdownSystem(String... args) {
