@@ -81,7 +81,7 @@ public class Network extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      *
@@ -99,7 +99,7 @@ public class Network extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the count
@@ -122,7 +122,7 @@ public class Network extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the nics
@@ -145,7 +145,7 @@ public class Network extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param nics

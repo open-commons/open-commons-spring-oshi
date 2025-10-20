@@ -96,7 +96,7 @@ public class DiskStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      *
@@ -114,7 +114,7 @@ public class DiskStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the description
@@ -137,7 +137,7 @@ public class DiskStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the drive
@@ -160,7 +160,7 @@ public class DiskStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the label
@@ -183,7 +183,7 @@ public class DiskStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the name
@@ -206,7 +206,7 @@ public class DiskStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the total
@@ -229,7 +229,7 @@ public class DiskStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the usable
@@ -252,7 +252,7 @@ public class DiskStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param description
@@ -275,7 +275,7 @@ public class DiskStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param drive
@@ -298,7 +298,7 @@ public class DiskStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param label
@@ -321,7 +321,7 @@ public class DiskStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param name
@@ -344,7 +344,7 @@ public class DiskStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param total
@@ -367,7 +367,7 @@ public class DiskStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param usable

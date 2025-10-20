@@ -132,7 +132,7 @@ public class SystemStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      *
@@ -150,7 +150,7 @@ public class SystemStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the cpus
@@ -173,7 +173,7 @@ public class SystemStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the memory
@@ -196,7 +196,7 @@ public class SystemStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the networks
@@ -219,7 +219,7 @@ public class SystemStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the running
@@ -242,7 +242,7 @@ public class SystemStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the storages
@@ -265,7 +265,7 @@ public class SystemStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param cpus
@@ -288,7 +288,7 @@ public class SystemStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param memory
@@ -311,7 +311,7 @@ public class SystemStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param networks
@@ -334,7 +334,7 @@ public class SystemStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param running
@@ -357,7 +357,7 @@ public class SystemStatus extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param storages

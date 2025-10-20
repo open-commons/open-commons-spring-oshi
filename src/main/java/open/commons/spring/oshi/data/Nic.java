@@ -108,7 +108,7 @@ public class Nic extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      *
@@ -126,7 +126,7 @@ public class Nic extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the alias
@@ -149,7 +149,7 @@ public class Nic extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the displayName
@@ -172,7 +172,7 @@ public class Nic extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the ipv4Addr
@@ -195,7 +195,7 @@ public class Nic extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the ipv6Addr
@@ -218,7 +218,7 @@ public class Nic extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the macAddr
@@ -241,7 +241,7 @@ public class Nic extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the name
@@ -264,7 +264,7 @@ public class Nic extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the status
@@ -287,7 +287,7 @@ public class Nic extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param alias
@@ -310,7 +310,7 @@ public class Nic extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param displayName
@@ -333,7 +333,7 @@ public class Nic extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param ipv4Addr
@@ -356,7 +356,7 @@ public class Nic extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param ipv6Addr
@@ -379,7 +379,7 @@ public class Nic extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param macAddr
@@ -402,7 +402,7 @@ public class Nic extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param name
@@ -425,7 +425,7 @@ public class Nic extends Timestamped {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2021. 11. 5.		박준홍			최초 작성
+     * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param status
