@@ -84,10 +84,8 @@ public class Network extends Timestamped {
      * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
-     *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public Network() {
     }
@@ -106,7 +104,6 @@ public class Network extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #count
      */
@@ -129,7 +126,6 @@ public class Network extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #nics
      */
@@ -153,7 +149,6 @@ public class Network extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #nics
      */
@@ -166,7 +161,6 @@ public class Network extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see java.lang.Object#toString()
      */

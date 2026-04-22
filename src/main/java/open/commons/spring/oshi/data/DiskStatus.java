@@ -46,7 +46,6 @@ package open.commons.spring.oshi.data;
  * }
  * </pre>
  *
- *
  * @since 2021. 11. 5.
  * @version 0.1.0
  * @author parkjunhong77@gmail.com
@@ -99,10 +98,8 @@ public class DiskStatus extends Timestamped {
      * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
-     *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public DiskStatus() {
     }
@@ -121,7 +118,6 @@ public class DiskStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #description
      */
@@ -144,7 +140,6 @@ public class DiskStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #drive
      */
@@ -167,7 +162,6 @@ public class DiskStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #label
      */
@@ -190,7 +184,6 @@ public class DiskStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #name
      */
@@ -213,7 +206,6 @@ public class DiskStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #total
      */
@@ -236,7 +228,6 @@ public class DiskStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #usable
      */
@@ -260,7 +251,6 @@ public class DiskStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #description
      */
@@ -283,7 +273,6 @@ public class DiskStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #drive
      */
@@ -306,7 +295,6 @@ public class DiskStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #label
      */
@@ -329,7 +317,6 @@ public class DiskStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #name
      */
@@ -352,7 +339,6 @@ public class DiskStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #total
      */
@@ -375,7 +361,6 @@ public class DiskStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #usable
      */
@@ -387,7 +372,6 @@ public class DiskStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see java.lang.Object#toString()
      */

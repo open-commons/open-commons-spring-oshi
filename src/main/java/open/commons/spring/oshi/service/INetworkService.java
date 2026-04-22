@@ -57,7 +57,6 @@ public interface INetworkService {
      *
      * @since 2021. 11. 16.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public Result<Boolean> handleEthernet(String name, String displayName, String alias, boolean enable);
 

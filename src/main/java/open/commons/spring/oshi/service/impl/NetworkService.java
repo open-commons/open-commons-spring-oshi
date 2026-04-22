@@ -92,10 +92,8 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
      * @param resorceSvc
      *            자원 정보 제공 서비스
      *
-     *
      * @since 2021. 11. 16.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public NetworkService(IResourceService resourceSvc) {
         this.resourceSvc = resourceSvc;
@@ -125,7 +123,6 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
      * @return
      *
      * @since 2021. 11. 16.
-     * @author Park_Jun_Hong (parkjunhong77@gmail.com)
      */
     protected Result<String> getEthernetAlias(String name) throws ResourceNotFoundException {
 
@@ -150,7 +147,6 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
      *
      * @since 2021. 11. 16.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see open.commons.spring.oshi.service.INetworkService#handleEthernet(java.lang.String, String, String, boolean)
      */
@@ -224,10 +220,8 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
      * 2021. 11. 16.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
-     *
      * @since 2021. 11. 16.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     protected void updateEthernets() {
         Result<Network> resultNetwork = resourceSvc.getNetwork();

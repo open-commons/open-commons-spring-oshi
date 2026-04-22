@@ -111,10 +111,8 @@ public class Nic extends Timestamped {
      * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
-     *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public Nic() {
     }
@@ -133,7 +131,6 @@ public class Nic extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #alias
      */
@@ -156,7 +153,6 @@ public class Nic extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #displayName
      */
@@ -179,7 +175,6 @@ public class Nic extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #ipv4Addr
      */
@@ -202,7 +197,6 @@ public class Nic extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #ipv6Addr
      */
@@ -225,7 +219,6 @@ public class Nic extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #macAddr
      */
@@ -248,7 +241,6 @@ public class Nic extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #name
      */
@@ -271,7 +263,6 @@ public class Nic extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #status
      */
@@ -295,7 +286,6 @@ public class Nic extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #alias
      */
@@ -318,7 +308,6 @@ public class Nic extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #displayName
      */
@@ -341,7 +330,6 @@ public class Nic extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #ipv4Addr
      */
@@ -364,7 +352,6 @@ public class Nic extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #ipv6Addr
      */
@@ -387,7 +374,6 @@ public class Nic extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #macAddr
      */
@@ -410,7 +396,6 @@ public class Nic extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #name
      */
@@ -433,7 +418,6 @@ public class Nic extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #status
      */
@@ -445,7 +429,6 @@ public class Nic extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see java.lang.Object#toString()
      */

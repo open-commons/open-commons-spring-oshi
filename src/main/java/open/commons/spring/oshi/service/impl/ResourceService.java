@@ -137,10 +137,8 @@ public class ResourceService extends AbstractComponent implements IResourceServi
      * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
-     *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public ResourceService() {
         this.si = new SystemInfo();
@@ -171,7 +169,6 @@ public class ResourceService extends AbstractComponent implements IResourceServi
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     private <T> boolean getAndSet(Supplier<Result<T>> provider, Consumer<T> con, ArrayList<String> errMsgBuf) {
         Result<T> r = (Result<T>) provider.get();
@@ -187,7 +184,6 @@ public class ResourceService extends AbstractComponent implements IResourceServi
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see open.commons.spring.oshi.service.IResourceService#getCpu()
      */
@@ -232,7 +228,6 @@ public class ResourceService extends AbstractComponent implements IResourceServi
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see open.commons.spring.oshi.service.IResourceService#getMemory()
      */
@@ -258,7 +253,6 @@ public class ResourceService extends AbstractComponent implements IResourceServi
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see open.commons.spring.oshi.service.IResourceService#getNetwork()
      */
@@ -296,7 +290,6 @@ public class ResourceService extends AbstractComponent implements IResourceServi
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see open.commons.spring.oshi.service.IResourceService#getStorage()
      */
@@ -331,7 +324,6 @@ public class ResourceService extends AbstractComponent implements IResourceServi
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see open.commons.spring.oshi.service.IResourceService#getSystemRunning()
      */
@@ -355,7 +347,6 @@ public class ResourceService extends AbstractComponent implements IResourceServi
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see open.commons.spring.oshi.service.IResourceService#getSystemStatus()
      */

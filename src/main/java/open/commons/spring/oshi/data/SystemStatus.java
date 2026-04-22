@@ -135,10 +135,8 @@ public class SystemStatus extends Timestamped {
      * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
-     *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public SystemStatus() {
     }
@@ -157,7 +155,6 @@ public class SystemStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #cpus
      */
@@ -180,7 +177,6 @@ public class SystemStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #memory
      */
@@ -203,7 +199,6 @@ public class SystemStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #networks
      */
@@ -226,7 +221,6 @@ public class SystemStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #running
      */
@@ -249,7 +243,6 @@ public class SystemStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #storages
      */
@@ -273,7 +266,6 @@ public class SystemStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #cpus
      */
@@ -296,7 +288,6 @@ public class SystemStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #memory
      */
@@ -319,7 +310,6 @@ public class SystemStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #networks
      */
@@ -342,7 +332,6 @@ public class SystemStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #running
      */
@@ -365,7 +354,6 @@ public class SystemStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #storages
      */
@@ -377,7 +365,6 @@ public class SystemStatus extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see java.lang.Object#toString()
      */

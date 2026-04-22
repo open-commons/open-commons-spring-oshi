@@ -70,10 +70,8 @@ public class SystemRunning extends Timestamped {
      * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
-     *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public SystemRunning() {
     }
@@ -92,7 +90,6 @@ public class SystemRunning extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #bootTime
      */
@@ -115,7 +112,6 @@ public class SystemRunning extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #upTime
      */
@@ -139,7 +135,6 @@ public class SystemRunning extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #bootTime
      */
@@ -162,7 +157,6 @@ public class SystemRunning extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #upTime
      */
@@ -174,7 +168,6 @@ public class SystemRunning extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see java.lang.Object#toString()
      */

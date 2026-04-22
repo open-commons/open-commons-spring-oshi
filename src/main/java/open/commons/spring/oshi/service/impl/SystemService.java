@@ -69,10 +69,8 @@ public class SystemService extends CliExecutionComponent implements ISystemServi
      * 2021. 11. 23.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
-     *
      * @since 2021. 11. 23.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public SystemService() {
     }
@@ -81,7 +79,6 @@ public class SystemService extends CliExecutionComponent implements ISystemServi
      *
      * @since 2021. 11. 23.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see open.commons.spring.web.mvc.IAsyncJobHandler#getAsyncManagerHolder()
      */
@@ -94,7 +91,6 @@ public class SystemService extends CliExecutionComponent implements ISystemServi
      *
      * @since 2021. 11. 23.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see open.commons.spring.oshi.service.ISystemService#shutdownSystem(String...)
      */

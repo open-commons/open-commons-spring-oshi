@@ -57,7 +57,6 @@ public interface IResourceService {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public Result<Cpu> getCpu();
 
@@ -75,7 +74,6 @@ public interface IResourceService {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public Result<Memory> getMemory();
 
@@ -93,7 +91,6 @@ public interface IResourceService {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public Result<Network> getNetwork();
 
@@ -111,7 +108,6 @@ public interface IResourceService {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public Result<Storage> getStorage();
 
@@ -129,7 +125,6 @@ public interface IResourceService {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public Result<SystemRunning> getSystemRunning();
 
@@ -147,7 +142,6 @@ public interface IResourceService {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public Result<SystemStatus> getSystemStatus();
 }

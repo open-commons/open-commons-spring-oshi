@@ -47,10 +47,8 @@ public class ResourceNotFoundException extends Exception {
      * 2021. 11. 16.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
-     *
      * @since 2021. 11. 16.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public ResourceNotFoundException() {
     }
@@ -69,7 +67,6 @@ public class ResourceNotFoundException extends Exception {
      *
      * @since 2021. 11. 16.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public ResourceNotFoundException(String message) {
         super(message);
@@ -90,7 +87,6 @@ public class ResourceNotFoundException extends Exception {
      *
      * @since 2021. 11. 16.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      * 
      * @see String#format(String, Object...)
      */
@@ -113,7 +109,6 @@ public class ResourceNotFoundException extends Exception {
      *
      * @since 2021. 11. 16.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public ResourceNotFoundException(String message, Throwable cause) {
         super(message, cause);
@@ -136,7 +131,6 @@ public class ResourceNotFoundException extends Exception {
      *
      * @since 2021. 11. 16.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public ResourceNotFoundException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
@@ -156,7 +150,6 @@ public class ResourceNotFoundException extends Exception {
      *
      * @since 2021. 11. 16.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public ResourceNotFoundException(Throwable cause) {
         super(cause);
@@ -181,7 +174,6 @@ public class ResourceNotFoundException extends Exception {
      *
      * @since 2021. 11. 16.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public ResourceNotFoundException(Throwable cause, boolean enableSuppression, boolean writableStackTrace, String format, Object... args) {
         super(String.format(format, args), cause, enableSuppression, writableStackTrace);
@@ -202,7 +194,6 @@ public class ResourceNotFoundException extends Exception {
      *
      * @since 2021. 11. 16.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      * 
      * @see String#format(String, Object...)
      */

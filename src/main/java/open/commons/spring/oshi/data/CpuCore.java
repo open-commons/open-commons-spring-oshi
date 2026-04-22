@@ -70,10 +70,8 @@ public class CpuCore extends Timestamped {
      * 2021. 11. 5.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
-     *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public CpuCore() {
     }
@@ -94,7 +92,6 @@ public class CpuCore extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      */
     public CpuCore(Integer id, Double usage) {
         this.id = id;
@@ -115,7 +112,6 @@ public class CpuCore extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #id
      */
@@ -138,7 +134,6 @@ public class CpuCore extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #usage
      */
@@ -162,7 +157,6 @@ public class CpuCore extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #id
      */
@@ -185,7 +179,6 @@ public class CpuCore extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see #usage
      */
@@ -197,7 +190,6 @@ public class CpuCore extends Timestamped {
      *
      * @since 2021. 11. 5.
      * @version 0.1.0
-     * @author parkjunhong77@gmail.com
      *
      * @see java.lang.Object#toString()
      */
