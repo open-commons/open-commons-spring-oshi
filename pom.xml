@@ -9,7 +9,7 @@
     <relativePath /> <!-- lookup parent from repository -->
   </parent>
   <artifactId>open-commons-spring-oshi</artifactId>
-  <version>0.3.0-SNAPSHOT</version>
+  <version>0.3.0</version>
   <name>Open Commons for OSHI</name>
   <description>Open Commons for Spring-Based OSHI</description>
   <url>https://github.com/open-commons/open-commons-spring-oshi</url>
