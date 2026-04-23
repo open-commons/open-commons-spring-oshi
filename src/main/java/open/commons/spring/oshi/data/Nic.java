@@ -29,7 +29,8 @@ package open.commons.spring.oshi.data;
 import oshi.hardware.NetworkIF.IfOperStatus;
 
 /**
- * <a href="https://en.wikipedia.org/wiki/Network_interface_controller">NIC(Network Interface Controller)</a> 설정정보<br>
+ * <a href="https://en.wikipedia.org/wiki/Network_interface_controller">NIC(Network Interface
+ * Controller)</a> 설정정보<br>
  * 
  * <a href="http://tools.ietf.org/html/rfc7159">JSON</a> source: <br>
  * 

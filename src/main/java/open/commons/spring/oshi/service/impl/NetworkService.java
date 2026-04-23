@@ -41,13 +41,22 @@ import open.commons.spring.oshi.service.INetworkService;
 import open.commons.spring.oshi.service.IResourceService;
 import open.commons.spring.web.mvc.service.CliExecutionComponent;
 
-import oshi.PlatformEnum;
-import oshi.SystemInfo;
+import oshi.util.PlatformEnum;
 
 /**
+ * 네트워크 관련 기능을 제공하는 서비스 클래스입니다. <br>
+ * 
+ * <pre>
+ * [개정이력]
+ * 날짜      | 작성자             |   내용
+ * ------------------------------------------
+ * 2021. 11. 16.    parkjunhong77@gmail.com     최초 작성
+ * 2026. 4. 23.     parkjunhong77@gmail.com     JDK 25 및 OSHI 6.12.0 (FFM API) 마이그레이션 적용
+ * </pre>
  * 
  * @since 2021. 11. 16.
- * @version 0.1.0
+ * 
+ * @version 4.0.0
  * @author parkjunhong77@gmail.com
  */
 public class NetworkService extends CliExecutionComponent implements INetworkService {
@@ -57,12 +66,12 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
     protected static final Map<PlatformEnum, String[]> NET_COMMANDS = new ConcurrentSkipListMap<>();
     static {
         // Windows. (e.g. netsh interface set interface <alias>")
-        // @see {@link Nic#getAlias}
+        // @see {@link Nic#getAlias()}
         NET_COMMANDS.put(PlatformEnum.WINDOWS, new String[] { "netsh", "interface", "set", "interface" });
     }
 
     /** 현재 운영체제 */
-    protected final PlatformEnum platform = SystemInfo.getCurrentPlatform();
+    protected final PlatformEnum platform = PlatformEnum.getCurrentPlatform();
     /** 시스템 정보 제공 서비스 */
     protected IResourceService resourceSvc;
 
@@ -84,12 +93,12 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
      * 
      * <pre>
      * [개정이력]
-     *      날짜    	| 작성자	|	내용
+     * 날짜      | 작성자             |   내용
      * ------------------------------------------
-     * 2021. 11. 16.		parkjunhong77@gmail.com			최초 작성
+     * 2021. 11. 16.    parkjunhong77@gmail.com     최초 작성
      * </pre>
      * 
-     * @param resorceSvc
+     * @param resourceSvc
      *            자원 정보 제공 서비스
      *
      * @since 2021. 11. 16.
@@ -113,16 +122,20 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
      * 
      * <pre>
      * [개정이력]
-     *      날짜      | 작성자   |   내용
+     * 날짜      | 작성자             |   내용
      * ------------------------------------------
-     * 2021. 11. 16.        parkjunhong77@gmail.com         최초 작성
+     * 2021. 11. 16.    parkjunhong77@gmail.com     최초 작성
+     * 2026. 4. 23.     parkjunhong77@gmail.com     메서드 레퍼런스 적용
      * </pre>
      *
      * @param name
      *            이더넷 이름
-     * @return
+     * @return Alias 값
+     * @throws ResourceNotFoundException
+     *             해당하는 이더넷 카드가 없을 경우
      *
      * @since 2021. 11. 16.
+     * @version 4.0.0
      */
     protected Result<String> getEthernetAlias(String name) throws ResourceNotFoundException {
 
@@ -131,10 +144,8 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
             return Result.error(resultNetwork.getMessage());
         }
 
-        Optional<String> optAlias = resultNetwork.getData().getNics().stream()//
-                .filter(nic -> name.equalsIgnoreCase(nic.getName())) //
-                .map(nic -> nic.getAlias()) //
-                .findFirst();
+        Optional<String> optAlias = resultNetwork.getData().getNics().stream()
+                .filter(nic -> name.equalsIgnoreCase(nic.getName())).map(Nic::getAlias).findFirst();
 
         if (optAlias.isPresent()) {
             return Result.success(optAlias.get());
@@ -144,55 +155,36 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
     }
 
     /**
+     * 이더넷을 활성화 또는 비활성화합니다. <br>
+     * 
+     * <pre>
+     * [개정이력]
+     * 날짜      | 작성자             |   내용
+     * ------------------------------------------
+     * 2021. 11. 16.    parkjunhong77@gmail.com     최초 작성
+     * 2026. 4. 23.     parkjunhong77@gmail.com     모던 자바 Switch 표현식 적용
+     * </pre>
      *
      * @since 2021. 11. 16.
-     * @version 0.1.0
+     * @version 4.0.0
      *
-     * @see open.commons.spring.oshi.service.INetworkService#handleEthernet(java.lang.String, String, String, boolean)
+     * @see open.commons.spring.oshi.service.INetworkService#handleEthernet(java.lang.String,
+     *      String, String, boolean)
      */
-    @SuppressWarnings("deprecation")
     @Override
     public Result<Boolean> handleEthernet(String name, String displayName, String alias, boolean enable) {
-        switch (platform) {
-            case AIX:
-                throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
-            case ANDROID:
-                throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
-            case FREEBSD:
-                throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
-            case GNU:
-                throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
-            case KFREEBSD:
-                throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
-            case LINUX:
-                throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
-            case MACOS:
-            case MACOSX:
-                throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
-            case NETBSD:
-                throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
-            case OPENBSD:
-                throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
-            case SOLARIS:
-                throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
-            case UNKNOWN:
-                throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
-            case WINDOWS:
-                return handleEthernetOnWindows(name, alias, enable);
-            case WINDOWSCE:
-                throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
-            default:
-                throw new UnsupportedOperationException(String.format("현재 운영체제에서는 지원하지 않는 기능입니다.", platform));
-        }
+        return switch (this.platform) {
+            case WINDOWS -> handleEthernetOnWindows(name, alias, enable);
+            default -> throw new UnsupportedOperationException(
+                    String.format("현재 운영체제(%s)에서는 지원하지 않는 기능입니다.", this.platform));
+        };
     }
 
     protected Result<Boolean> handleEthernetOnWindows(String name, String alias, boolean enable) {
         try {
             updateEthernets();
 
-            // 주어진 이더넷에 대한 최신 'alias' 값
             String latestAlias = this.ethernetAliases.get(name);
-
             if (latestAlias != null) {
                 alias = latestAlias;
             } else if (alias == null) {
@@ -204,7 +196,8 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
 
             return executeNoWait(cmdarray, enable ? "이더넷 활성화" : "이더넷 비활성화");
         } catch (ResourceNotFoundException | IOException e) {
-            String errMsg = String.format("이더넷(%s) %s 작업을 실패하였습니다. 원인=%s", name, enable ? "활성화" : "비활성화", e.getMessage());
+            String errMsg = String.format("이더넷(%s) %s 작업을 실패하였습니다. 원인=%s", name, enable ? "활성화" : "비활성화",
+                    e.getMessage());
             logger.error(errMsg, e);
             return Result.error(errMsg);
         }
@@ -215,9 +208,9 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
      * 
      * <pre>
      * [개정이력]
-     *      날짜    	| 작성자	|	내용
+     * 날짜      | 작성자             |   내용
      * ------------------------------------------
-     * 2021. 11. 16.		parkjunhong77@gmail.com			최초 작성
+     * 2021. 11. 16.    parkjunhong77@gmail.com     최초 작성
      * </pre>
      *
      * @since 2021. 11. 16.
@@ -226,12 +219,9 @@ public class NetworkService extends CliExecutionComponent implements INetworkSer
     protected void updateEthernets() {
         Result<Network> resultNetwork = resourceSvc.getNetwork();
         if (resultNetwork.isError()) {
-            logger.warn("이더넷 정보를 갱신하지 못하였습니다. 원인=%s", resultNetwork.getMessage());
+            logger.warn("이더넷 정보를 갱신하지 못하였습니다. 원인={}", resultNetwork.getMessage());
         } else {
-            resultNetwork.getData().getNics().stream()//
-                    .forEach(nw -> {
-                        ethernetAliases.put(nw.getName(), nw.getAlias());
-                    });
+            resultNetwork.getData().getNics().forEach(nw -> ethernetAliases.put(nw.getName(), nw.getAlias()));
         }
-    };
+    }
 }

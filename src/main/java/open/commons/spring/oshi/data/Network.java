@@ -30,8 +30,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 시스템에 설치된 <a href="https://en.wikipedia.org/wiki/Network_interface_controller">NIC(Network Interface Controller)</a>
- * 현황<br>
+ * 시스템에 설치된 <a href="https://en.wikipedia.org/wiki/Network_interface_controller">NIC(Network
+ * Interface Controller)</a> 현황<br>
  * 
  * <a href="http://tools.ietf.org/html/rfc7159">JSON</a> source: <br>
  * 
@@ -63,7 +63,8 @@ import java.util.List;
 public class Network extends Timestamped {
 
     /**
-     * <a href="https://en.wikipedia.org/wiki/Network_interface_controller">NIC(Network Interface Controller)</a> 개수<br>
+     * <a href="https://en.wikipedia.org/wiki/Network_interface_controller">NIC(Network Interface
+     * Controller)</a> 개수<br>
      * <b>JSON name: "count"</b>
      */
     private Integer count;

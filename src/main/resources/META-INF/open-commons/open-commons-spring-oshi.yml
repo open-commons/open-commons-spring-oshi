@@ -1,0 +1,42 @@
+open-commons:
+  spring:
+    oshi:
+      # 'sudo' 권한 사용 여부.
+      use-sudo: false
+      commands:
+        # OS별 즉시 종료 명령여
+        shutdown-now:
+          windows:
+            - shutdown
+            - /s
+            - /f
+            - /t
+            - 0
+          linux:
+            - /sbin/shutdown
+            - -h
+            - now
+          macos:
+            -/sbin/shutdown
+            - -h
+            - now
+          solaris:
+            - /usr/sbin/shutdown
+            - -y
+            - -g0
+            - -i5"
+          freebsd:
+            - /sbin/shutdown
+            - -p
+            - now"
+          openbsd:
+            - /sbin/shutdown
+            - -p
+            - now"
+          netbsd:
+            - /sbin/shutdown
+            - -p
+            - now"
+          aix:
+            - /usr/sbin/shutdown
+            - -F

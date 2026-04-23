@@ -41,18 +41,6 @@
   <properties>
     <!-- >>> begin: plugin dependencies -->
     <build.finalName>open-commons-spring-oshi-${project.version}</build.finalName>
-
-    <encoding>UTF-8</encoding>
-    <java.version>1.8</java.version>
-
-    <compile.encoding>UTF-8</compile.encoding>
-    <compile.source.version>1.8</compile.source.version>
-    <compile.target.version>1.8</compile.target.version>
-    <!-- >>> end: plugin dependencies -->
-
-    <!-- >>> begin: dependencies -->
-
-    <open-commons-spring-web.version>0.8.0-SNAPSHOT</open-commons-spring-web.version>
     <!-- <<< end: dependencies -->
   </properties>
 
@@ -100,14 +88,22 @@
     <!-- ************** -->
     <!-- begin: OS Information -->
     <!-- https://mvnrepository.com/artifact/com.github.oshi/oshi-core -->
+<!--    <dependency>-->
+<!--      <groupId>com.github.oshi</groupId>-->
+<!--      <artifactId>oshi-core</artifactId>-->
+<!--      <version>5.8.3</version>-->
+<!--    </dependency>-->
+
+    <!-- Source:
+    https://mvnrepository.com/artifact/com.github.oshi/oshi-core-java25 -->
     <dependency>
       <groupId>com.github.oshi</groupId>
-      <artifactId>oshi-core</artifactId>
-      <version>5.8.3</version>
+      <artifactId>oshi-core-java25</artifactId>
+      <version>6.12.0</version>
     </dependency>
+
     <!-- end: OS Information -->
     <!-- ************** -->
-
 
     <!-- ********************** -->
     <!-- >>> begin: logging -->

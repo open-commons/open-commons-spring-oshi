@@ -49,8 +49,10 @@ public interface INetworkService {
      *
      * @param name
      *            이더넷 이름.
-     * @param displayName TODO
-     * @param alias TODO
+     * @param displayName
+     *            TODO
+     * @param alias
+     *            TODO
      * @param enable
      *            활성화/비활성화 여부. (true: 활성화)
      * @return

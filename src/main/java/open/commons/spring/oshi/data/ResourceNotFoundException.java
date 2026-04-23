@@ -132,7 +132,8 @@ public class ResourceNotFoundException extends Exception {
      * @since 2021. 11. 16.
      * @version 0.1.0
      */
-    public ResourceNotFoundException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    public ResourceNotFoundException(String message, Throwable cause, boolean enableSuppression,
+            boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 
@@ -175,7 +176,8 @@ public class ResourceNotFoundException extends Exception {
      * @since 2021. 11. 16.
      * @version 0.1.0
      */
-    public ResourceNotFoundException(Throwable cause, boolean enableSuppression, boolean writableStackTrace, String format, Object... args) {
+    public ResourceNotFoundException(Throwable cause, boolean enableSuppression, boolean writableStackTrace,
+            String format, Object... args) {
         super(String.format(format, args), cause, enableSuppression, writableStackTrace);
     }
 
